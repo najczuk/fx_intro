@@ -1,0 +1,19 @@
+package pl.sda.fx.hello.mvc.controller;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.text.Text;
+
+/**
+ * Created by Adrian on 2017-01-26.
+ */
+public class LoginController {
+    @FXML
+    private Text actiontarget;
+
+    @FXML
+    protected void handleSubmitButtonAction(ActionEvent event) {
+        actiontarget.setText("Sign in button pressed");
+    }
+
+}
